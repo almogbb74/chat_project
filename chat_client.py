@@ -13,11 +13,11 @@ def receive_broadcast(broad_socket):
 
 
 def send_file(client_socket_file, message):
-    image_path = message.split()[1]
+    path = message.split()[1]
     try:
-        message = f'-file {image_path} {os.path.getsize(image_path)}'
+        message = f'-file {path} {os.path.getsize(path)}'
         client_socket_file.send(bytes(message, "utf-8"))
-        with open(image_path, 'rb') as file:
+        with open(path, 'rb') as file:
             data = file.read(1024)
             print('Data being transferred...')
             while data:
