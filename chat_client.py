@@ -57,7 +57,7 @@ else:
     print(f'Hello {username}!')
 
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-client_socket.connect(('192.168.1.178', 9999))
+client_socket.connect(('###.###.###.###', 9999)) # IP PLACEHOLDER
 client_socket.send(bytes(username, "utf-8"))
 
 print("Welcome to Whatsapp 2.0! Have fun ;)\n"
