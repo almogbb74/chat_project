@@ -104,7 +104,7 @@ def broadcast_message(clients, message, sender, chat_client):
 
 
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-server_socket.bind(('###.###.###.###', 9999))
+server_socket.bind(('###.###.###.###', 9999)) # IP PLACEHOLDER
 server_socket.listen(5)
 
 while True:
