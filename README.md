@@ -5,7 +5,7 @@ This project is a high-performance, multi-user chat application built on a Clien
 The system supports real-time communication, private messaging, user-defined chat rooms, and a reliable peer-to-server file transfer utility with data integrity checks.
 The core strength of the platform lies in its multi-threaded server design, enabling simultaneous, non-blocking communication for numerous concurrent users.
 
-## 🚀 Key Features and Technical Highlights
+## 💬 Key Features and Technical Highlights
 ### Server Architecture (server.py)
 
   Multi-threaded Concurrency: Implements a multi-threaded server architecture where each new client connection is delegated to its own independent thread (chat_session). This ensures high throughput and responsiveness by preventing any single client session from blocking others.
