@@ -80,8 +80,8 @@ def get_file(client_socket_file, file_message):
     client_socket_file.send(bytes(file_message, "utf-8"))
     file_message = client_socket_file.recv(1024).decode()
     properties = file_message.split()
-    image_name = os.path.basename(properties[1])
-    send_to = f'{os.path.abspath(os.getcwd())}\\Files\\{image_name}'
+    file_name = os.path.basename(properties[1])
+    send_to = f'{os.path.abspath(os.getcwd())}\\Files\\{file_name}'
     try:
         size = int(properties[2])
         loops_counter = int(ceil(size / 1024))
